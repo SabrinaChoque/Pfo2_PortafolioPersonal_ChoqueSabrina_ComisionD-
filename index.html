@@ -11,9 +11,7 @@
 </head>
 <body>
     <header>
-        <!--En header realizaremos el titulo principal de nuestra pagina con 5 enlaces de navegación, 
-        para poder dirigirnos en esa seccion correspondiente-->
-        <h1>Mi Portafolio Personal</h1>
+    <h1>Mi Portafolio Personal</h1>
         <nav>
             <ul>
                 <li><a href="#sobreMi">Sobre Mí</a></li>
@@ -26,10 +24,9 @@
     </header>
 
     <main>
-        <!--En el <main> se divide el contenido en 5 secciones. Esta primera es "Sobre Mí", identificada con un id.
-        Usamos un contenedor para aplicar estilos en CSS con Flexbox, lo que permite mostrar la imagen y el texto en una disposición horizontal.
-        La imagen está ubicada en la carpeta /img. -->
-        <section id="sobreMi">
+        <!--se agrega boton mostrar y ocultar  -->
+        <button onclick="toggleSobreMi()">mostrar/ocultar</button>
+        <section id="sobreMi" class="oculto">
             <div class="tarjeta">
                 <h2>Sobre Mí:</h2>
                 <div class="contenedorSobreMi">
@@ -50,8 +47,7 @@
         </section>
 
         <section id="habilidades">
-            <!--La seccion habilidades la use para una tabla con dos columnas (habilidades propias y futuras). 
-            y use una clase para diseñar el cuadro con estilos.-->
+            
             <h2>Habilidades:</h2>
             <table class="cuadro-habilidades">
                 <tr>
@@ -82,7 +78,7 @@
         </section>
 
         <section id="hobbies">
-            <!--La idea de hobbie fue crear una lista con cada actividad y especificarla-->
+           
             <h2>Hobbies:</h2>
             <ul class="lista-hobbies">
                 <li><b>Manualidades:</b>
@@ -97,8 +93,6 @@
             </ul>
         </section>
 
-        <!--La sección contacto realizamos un id para identificarla y una clase para aplicar estilos personalizados al formulario,
-        como tipografía y diseño de inputs.-->
         <section id="contacto">
             <form class="form-contacto">
                 <h2 id="contacto">Contacto:</h2>
@@ -119,9 +113,7 @@
         </section>
 
         <section id="peliculas">
-            <!--En esta sección "Películas" realizamos tarjetas individuales para cada película, 
-            dentro de un contenedor principal. Se aplicó Flexbox para organizarlas en filas. 
-            Cada tarjeta contiene imagen, título y descripción de la película (a mi criterio).-->
+            
             <h2>Películas Favoritas:</h2>
             <div class="contenedorPeliculas">
                 <div class="tarjetaPeliculas">
@@ -153,13 +145,13 @@
     </main>
 
     <footer>
-        <!--Por último, el footer será el pie de la página web, que contiene los créditos del sitio y un enlace al perfil de GitHub.-->
+        <!--Se agrega contador de visitas-->
+        <p>Gracias por visitar mi portafolio :) </p>
+        <div id="contador"></div>
+        
         <p>&copy; 2025 Sabrina Choque. Todos los derechos reservados.</p>
         <p>Encontrame en <a href="https://github.com/SabrinaChoque" target="_blank">GitHub</a></p>
-    </footer>
-
-    <!--Idea a futuro: me gustaría agregar un botón para volver al inicio desde el título, 
-    transformar los enlaces del menú en botones, y lograr que cada sección abra una interfaz diferente. 
-    Espero lograrlo con más práctica.-->
+    </footer>    
+    <script src="js/script.js"></script>
 </body>
 </html>

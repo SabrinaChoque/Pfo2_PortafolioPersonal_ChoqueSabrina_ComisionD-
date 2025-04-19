@@ -214,6 +214,15 @@ h2 {
     font-size: 14px;
     color: #444;
 }
+/*agregamos animacion a tarjetas*/
+.animar {
+    animation: girar 1s ease-in-out;
+}
+
+@keyframes girar {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
 footer {
     background-color: #b388eb;
     color: rgb(109, 11, 112);
@@ -230,4 +239,22 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+/*------------------pfo2-----------------------------------------------------*/
+.oculto {
+    display: none;
+}
+.mensaje-bienvenida {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #b388eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
 }
