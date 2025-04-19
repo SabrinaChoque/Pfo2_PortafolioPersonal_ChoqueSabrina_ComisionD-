@@ -1,0 +1,233 @@
+*{    
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;       
+}
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: pink; 
+}
+
+h1 {
+    color: #9400D3 ;
+     font-size: 40px;
+     font-weight: bold;
+      margin: 10px 0;
+      letter-spacing: 2px;
+       text-align: center;
+  }
+
+
+  nav {
+    background-color: #b388eb; 
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.5s;
+}
+
+nav a:hover {
+    color: #310131;
+}
+
+
+main {
+    margin-top: 20px; 
+}
+
+section {
+    width: 80%; 
+   max-width: 900px;
+   margin: 20px auto; 
+   padding: 40px;
+   background-color: #a2e3f5;
+   border-radius: 20px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   color: #003344;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+
+.contenedorSobreMi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 90%; 
+    margin: 0 auto;
+    padding: 20px;
+}
+.texto {
+    width: 65%;
+    text-align: justify;
+}
+.imagen {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.imagen img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 10px;
+}
+.cuadro-habilidades {
+    border: 4px solid blue;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 60%;
+    background-color: white;
+}
+
+.cuadro-habilidades th,
+.cuadro-habilidades td {
+    border: 2px solid blue;
+    padding: 15px;
+    vertical-align: top;
+}
+
+.cuadro-habilidades th {
+    background-color: #a2e3f5;
+    text-align: center;
+    font-weight: bold;
+    color: #003344;
+}
+.lista-hobbies {
+    border: 3px solid #333366;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+    list-style-position: inside;
+    background-color: transparent; 
+    box-shadow: none; 
+}
+.form-contacto {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-contacto p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-contacto label {
+    width: 120px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.form-contacto input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-contacto button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #9370DB;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-contacto button:hover {
+    background-color: #7b68ee;
+}
+
+
+.contenedorPeliculas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+    padding: 20px;
+}
+
+.tarjetaPeliculas {
+    width: 300px;
+    background: #f39b9b;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.tarjetaPeliculas img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tarjetaPeliculas h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.tarjetaPeliculas p {
+    font-size: 14px;
+    color: #444;
+}
+footer {
+    background-color: #b388eb;
+    color: rgb(109, 11, 112);
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+footer a {
+    color:#f7f6f8 ;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>PorfolioPersonal</title>
+</head>
+<body>
+    <header>
+        <!--En header realizaremos el titulo principal de nuestra pagina con 5 enlaces de navegación, 
+        para poder dirigirnos en esa seccion correspondiente-->
+        <h1>Mi Portafolio Personal</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobreMi">Sobre Mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#peliculas">Películas Favoritas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--En el <main> se divide el contenido en 5 secciones. Esta primera es "Sobre Mí", identificada con un id.
+        Usamos un contenedor para aplicar estilos en CSS con Flexbox, lo que permite mostrar la imagen y el texto en una disposición horizontal.
+        La imagen está ubicada en la carpeta /img. -->
+        <section id="sobreMi">
+            <div class="tarjeta">
+                <h2>Sobre Mí:</h2>
+                <div class="contenedorSobreMi">
+                    <div class="imagen">
+                        <img src="img/sabrina.jpg" alt="Foto de Sabrina">
+                    </div>
+                    <div class="texto">
+                        <p>Hola mi nombre es Sabrina Choque, tengo 38 años, casada hace 11 años y tengo a mi niño que se llama Dante.</p>
+                        <p>Actualmente estoy cursando la carrera de <b>Tecnicatura Superior de Desarrollo de Software</b>.</p>
+                        <p>Empecé a interesarme en el mundo de <b>IT</b> aprendiendo microinformática sobre armado y reparación de PC.</p>
+                        <p>Pero durante la pandemia no tenía muchos clientes, y ahí pude ver la oportunidad de estudiar <b>Programación con Java Full Stack</b>.
+                            Un curso que me hizo amar el desarrollo de software.</p>
+                        <p>Este año estoy con la asignatura <b>FrontEnd</b>. Aunque está fuera de mis habilidades y conocimiento, es un gran reto.
+                            Espero dar lo mejor de mí porque mi meta es obtener mi primer trabajo como desarrolladora y, en el futuro, liderar un equipo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <!--La seccion habilidades la use para una tabla con dos columnas (habilidades propias y futuras). 
+            y use una clase para diseñar el cuadro con estilos.-->
+            <h2>Habilidades:</h2>
+            <table class="cuadro-habilidades">
+                <tr>
+                    <th>Propias</th>
+                    <th>Futuras</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li>MySQL</li>
+                            <li>Android</li>
+                            <li>C#</li>
+                            <li>Java</li>
+                            <li>Office365</li>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>Cobol</li>
+                            <li>AWS</li>
+                            <li>C++</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="hobbies">
+            <!--La idea de hobbie fue crear una lista con cada actividad y especificarla-->
+            <h2>Hobbies:</h2>
+            <ul class="lista-hobbies">
+                <li><b>Manualidades:</b>
+                    <p>Me gusta mucho la costura, porcelana y todo lo que sea artesanía.</p>
+                </li>
+                <li><b>Diseño Gráfico:</b>
+                    <p>Realicé diseños de vectores, banners, Photoshop, edición de videos y diseño personalizado de anime y cómics.</p>
+                </li>
+                <li><b>Gamer:</b>
+                    <p>Me gustan juegos como Overwatch y Bendy and the Ink Machine.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!--La sección contacto realizamos un id para identificarla y una clase para aplicar estilos personalizados al formulario,
+        como tipografía y diseño de inputs.-->
+        <section id="contacto">
+            <form class="form-contacto">
+                <h2 id="contacto">Contacto:</h2>
+                <p><label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </p>
+                <p><label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido">
+                </p>
+                <p><label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                </p>
+                <p><label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono">
+                </p>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="peliculas">
+            <!--En esta sección "Películas" realizamos tarjetas individuales para cada película, 
+            dentro de un contenedor principal. Se aplicó Flexbox para organizarlas en filas. 
+            Cada tarjeta contiene imagen, título y descripción de la película (a mi criterio).-->
+            <h2>Películas Favoritas:</h2>
+            <div class="contenedorPeliculas">
+                <div class="tarjetaPeliculas">
+                    <img src="img/ExtrañoMundoDeJack.jpg" alt="imagen:El extraño mundo de Jack">
+                    <h3>El Extraño Mundo De Jack:</h3>
+                    <p>Esta película cuenta la historia de Jack Skellington, el Rey de Halloween, quien se ha cansado de hacer lo mismo 
+                        año tras año. Al descubrir la Navidad, se obsesiona con la idea de asumir el papel de Santa Claus, por lo que decide 
+                        capturarlo y apoderarse de la festividad. Sin embargo, las cosas no salen como él espera, y su plan termina teniendo
+                        consecuencias inesperadas.</p>
+                </div>
+                <div class="tarjetaPeliculas">
+                    <img src="img/cadaverDeLaNovia.jpg" alt="imagen:El cadáver de la novia">
+                    <h3>El Cadáver de la Novia:</h3>
+                    <p>¿Alguna vez imaginaste cómo sería casarte con un muerto? En El cadáver de la novia, un joven se compromete 
+                        accidentalmente con el espíritu de una novia que nunca logró llegar al altar. La película explora el matrimonio, 
+                        la crueldad de ciertas tradiciones y los intereses ocultos de las personas, todo dentro de una atmósfera gótica y
+                        conmovedora.</p>
+                </div>
+                <div class="tarjetaPeliculas">
+                    <img src="img/elCastilloAmbulante.jpg" alt="imagen:Castillo ambulante">
+                    <h3>El Castillo Ambulante:</h3>
+                    <p>Una hermosa película llena de fantasía y magia. La historia sigue a Sophie, una joven que es maldecida por una
+                        bruja y transformada en una anciana. En su búsqueda por romper el hechizo, encuentra el enigmático Castillo
+                        Ambulante y comienza a trabajar como limpiadora. A lo largo de la historia, descubre secretos sobre el castillo,
+                        su misterioso dueño Howl y el verdadero significado de la valentía y el amor.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!--Por último, el footer será el pie de la página web, que contiene los créditos del sitio y un enlace al perfil de GitHub.-->
+        <p>&copy; 2025 Sabrina Choque. Todos los derechos reservados.</p>
+        <p>Encontrame en <a href="https://github.com/SabrinaChoque" target="_blank">GitHub</a></p>
+    </footer>
+
+    <!--Idea a futuro: me gustaría agregar un botón para volver al inicio desde el título, 
+    transformar los enlaces del menú en botones, y lograr que cada sección abra una interfaz diferente. 
+    Espero lograrlo con más práctica.-->
+</body>
+</html>
