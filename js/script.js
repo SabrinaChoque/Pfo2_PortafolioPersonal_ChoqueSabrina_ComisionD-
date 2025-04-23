@@ -1,8 +1,7 @@
 console.log("js cargado");
-
+   
 document.querySelector(".form-contacto").addEventListener("submit", function(e) {
-    e.preventDefault(); 
-
+    e.preventDefault();
     let nombre = document.getElementById("nombre").value.trim();
     let apellido = document.getElementById("apellido").value.trim();
     let email = document.getElementById("email").value.trim();
@@ -14,7 +13,6 @@ document.querySelector(".form-contacto").addEventListener("submit", function(e) 
         alert("Formulario se envio con exito.");
     }
 });
-
 
 function toggleSobreMi() {
     const seccion = document.getElementById("sobreMi");
@@ -165,5 +163,6 @@ window.addEventListener("DOMContentLoaded", () => {
     filtrarPeliculas("todas"); 
     iniciarTemporizador();
 });
+
 
 
