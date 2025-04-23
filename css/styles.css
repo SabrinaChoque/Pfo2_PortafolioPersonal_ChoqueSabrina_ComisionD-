@@ -258,3 +258,29 @@ footer a:hover {
     font-size: 18px;
     font-family: "Outfit", sans-serif;
 }
+body.modo-oscuro {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+}
+
+body.modo-oscuro section {
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+body.modo-oscuro nav {
+    background-color: #444;
+}
+
+body.modo-oscuro footer {
+    background-color: #222;
+    color: #eee;
+}
+.temporizador {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #5a0f7b;
+    font-weight: bold;
+}
+

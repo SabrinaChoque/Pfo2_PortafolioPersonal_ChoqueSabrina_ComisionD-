@@ -23,6 +23,8 @@
         </nav>
     </header>
 
+    <button id="modoToggle">Cambiar Modo</button>
+
     <main>
         <!--se agrega boton mostrar y ocultar  -->
         <button onclick="toggleSobreMi()">mostrar/ocultar</button>
@@ -112,36 +114,17 @@
             </form>
         </section>
 
+        <div id="filtros">
+            <button onclick="filtrarPeliculas('todas')">Todas</button>
+            <button onclick="filtrarPeliculas('stop-motion')">Stop-Motion</button>
+            <button onclick="filtrarPeliculas('fantasía')">Fantasía</button>
+        </div>
+        
         <section id="peliculas">
-            
             <h2>Películas Favoritas:</h2>
-            <div class="contenedorPeliculas">
-                <div class="tarjetaPeliculas">
-                    <img src="img/ExtrañoMundoDeJack.jpg" alt="imagen:El extraño mundo de Jack">
-                    <h3>El Extraño Mundo De Jack:</h3>
-                    <p>Esta película cuenta la historia de Jack Skellington, el Rey de Halloween, quien se ha cansado de hacer lo mismo 
-                        año tras año. Al descubrir la Navidad, se obsesiona con la idea de asumir el papel de Santa Claus, por lo que decide 
-                        capturarlo y apoderarse de la festividad. Sin embargo, las cosas no salen como él espera, y su plan termina teniendo
-                        consecuencias inesperadas.</p>
-                </div>
-                <div class="tarjetaPeliculas">
-                    <img src="img/cadaverDeLaNovia.jpg" alt="imagen:El cadáver de la novia">
-                    <h3>El Cadáver de la Novia:</h3>
-                    <p>¿Alguna vez imaginaste cómo sería casarte con un muerto? En El cadáver de la novia, un joven se compromete 
-                        accidentalmente con el espíritu de una novia que nunca logró llegar al altar. La película explora el matrimonio, 
-                        la crueldad de ciertas tradiciones y los intereses ocultos de las personas, todo dentro de una atmósfera gótica y
-                        conmovedora.</p>
-                </div>
-                <div class="tarjetaPeliculas">
-                    <img src="img/elCastilloAmbulante.jpg" alt="imagen:Castillo ambulante">
-                    <h3>El Castillo Ambulante:</h3>
-                    <p>Una hermosa película llena de fantasía y magia. La historia sigue a Sophie, una joven que es maldecida por una
-                        bruja y transformada en una anciana. En su búsqueda por romper el hechizo, encuentra el enigmático Castillo
-                        Ambulante y comienza a trabajar como limpiadora. A lo largo de la historia, descubre secretos sobre el castillo,
-                        su misterioso dueño Howl y el verdadero significado de la valentía y el amor.</p>
-                </div>
-            </div>
+            <div class="contenedorPeliculas" id="galeriaPeliculas"></div>
         </section>
+        
     </main>
 
     <footer>
@@ -151,6 +134,8 @@
         
         <p>&copy; 2025 Sabrina Choque. Todos los derechos reservados.</p>
         <p>Encontrame en <a href="https://github.com/SabrinaChoque" target="_blank">GitHub</a></p>
+        <!--temporizador-->
+        <div id="temporizador" class="temporizador"></div>
     </footer>    
     <script src="js/script.js"></script>
 </body>
