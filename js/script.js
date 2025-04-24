@@ -14,13 +14,12 @@ document.querySelector(".form-contacto").addEventListener("submit", function(e) 
     }
 });
 
-function toggleSobreMi() {
-    const seccion = document.getElementById("sobreMi");
+function toggleSeccion(id) {
+    const seccion = document.getElementById(id);
     seccion.classList.toggle("oculto");
 }
 
 window.addEventListener("load", function () {
-  
     let visitas = localStorage.getItem("contadorVisitas");
 
     if (visitas) {
@@ -31,11 +30,11 @@ window.addEventListener("load", function () {
 
     localStorage.setItem("contadorVisitas", visitas);
 
-  
+    // Se agrega contador de visitas
     const divContador = document.getElementById("contador");
     divContador.textContent = `Esta página fue visitada ${visitas} veces desde este navegador.`;
 
-   
+    // Se agrega pop-up de bienvenida
     const mensaje = document.createElement("div");
     mensaje.textContent = "¡Bienvenidos a mi portafolio!";
     mensaje.classList.add("mensaje-bienvenida");
@@ -46,7 +45,6 @@ window.addEventListener("load", function () {
     }, 3000);
 });
 
-
 document.getElementById("modoToggle").addEventListener("click", () => {
     document.body.classList.toggle("modo-oscuro");
     
@@ -56,7 +54,6 @@ document.getElementById("modoToggle").addEventListener("click", () => {
         localStorage.setItem("modo", "claro");
     }
 });
-
 
 const peliculas = [
     {
@@ -78,7 +75,6 @@ const peliculas = [
         categoria: "fantasía"
     }
 ];
-
 
 function mostrarPeliculas() {
     const contenedor = document.getElementById("galeriaPeliculas");
@@ -102,6 +98,7 @@ function mostrarPeliculas() {
         contenedor.appendChild(tarjeta);
     });
 }
+
 function filtrarPeliculas(categoria) {
     const contenedor = document.getElementById("galeriaPeliculas");
     contenedor.innerHTML = ""; // Limpiamos la galería
@@ -128,6 +125,7 @@ function filtrarPeliculas(categoria) {
         contenedor.appendChild(tarjeta);
     });
 }
+
 function iniciarTemporizador() {
     const fin = new Date("2025-05-05T23:59:59").getTime();
 
@@ -153,16 +151,17 @@ function iniciarTemporizador() {
     const intervalo = setInterval(actualizar, 1000);
 }
 
-
 window.addEventListener("DOMContentLoaded", () => {
     const modo = localStorage.getItem("modo");
     if (modo === "oscuro") {
         document.body.classList.add("modo-oscuro");
     }
-    mostrarPeliculas();
+
+  
     filtrarPeliculas("todas"); 
     iniciarTemporizador();
 });
+
 
 
 

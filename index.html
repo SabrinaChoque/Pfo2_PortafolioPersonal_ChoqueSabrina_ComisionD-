@@ -12,25 +12,33 @@
 <body>
     <header>
     <h1>Mi Portafolio Personal</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobreMi">Sobre Mí</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#peliculas">Películas Favoritas</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <div class="nav-contenido">
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#sobreMi">Sobre Mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#peliculas">Películas Favoritas</a></li>
+                </ul>
+            </div>
+            <button id="modoToggle" class="color-boton">Cambiar Modo</button>
+        </div>
+        
+    </nav>
+    
     </header>
 
-    <button id="modoToggle">Cambiar Modo</button>
-
-    <main>
-        <!--se agrega boton mostrar y ocultar  -->
-        <button onclick="toggleSobreMi()">mostrar/ocultar</button>
-        <section id="sobreMi" class="oculto">
+      <main>
+        <div class="barra-superior">
+            <h2>Sobre Mi</h2>
+            <!--se agrega boton mostrar y ocultar  -->
+            <button class="color-boton" onclick="toggleSeccion('sobreMi')">ocultar/mostrar</button>
+        </div>
+        
+        <section id="sobreMi">
             <div class="tarjeta">
-                <h2>Sobre Mí:</h2>
                 <div class="contenedorSobreMi">
                     <div class="imagen">
                         <img src="img/sabrina.jpg" alt="Foto de Sabrina">
@@ -40,17 +48,20 @@
                         <p>Actualmente estoy cursando la carrera de <b>Tecnicatura Superior de Desarrollo de Software</b>.</p>
                         <p>Empecé a interesarme en el mundo de <b>IT</b> aprendiendo microinformática sobre armado y reparación de PC.</p>
                         <p>Pero durante la pandemia no tenía muchos clientes, y ahí pude ver la oportunidad de estudiar <b>Programación con Java Full Stack</b>.
-                            Un curso que me hizo amar el desarrollo de software.</p>
+                           Un curso que me hizo amar el desarrollo de software.</p>
                         <p>Este año estoy con la asignatura <b>FrontEnd</b>. Aunque está fuera de mis habilidades y conocimiento, es un gran reto.
-                            Espero dar lo mejor de mí porque mi meta es obtener mi primer trabajo como desarrolladora y, en el futuro, liderar un equipo.</p>
+                           Espero dar lo mejor de mí porque mi meta es obtener mi primer trabajo como desarrolladora y, en el futuro, liderar un equipo.</p>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section id="habilidades">
+        
+        <div class="barra-superior">
+            <h2>Habilidades</h2>
+            <button class="color-boton" onclick="toggleSeccion('habilidades')">ocultar/mostrar</button>
+        </div>
+        <section id="habilidades">           
             
-            <h2>Habilidades:</h2>
             <table class="cuadro-habilidades">
                 <tr>
                     <th>Propias</th>
@@ -78,10 +89,12 @@
                 </tr>
             </table>
         </section>
-
+        <div class="barra-superior">
+            <h2>Hobbies</h2>
+            <button class="color-boton" onclick="toggleSeccion('hobbies')">ocultar/mostrar</button>
+        </div>
         <section id="hobbies">
            
-            <h2>Hobbies:</h2>
             <ul class="lista-hobbies">
                 <li><b>Manualidades:</b>
                     <p>Me gusta mucho la costura, porcelana y todo lo que sea artesanía.</p>
@@ -95,9 +108,13 @@
             </ul>
         </section>
 
+        <div class="barra-superior">
+            <h2>Contacto</h2>
+            <button class="color-boton" onclick="toggleSeccion('contacto')">ocultar/mostrar</button>
+        </div>
         <section id="contacto">
             <form class="form-contacto">
-                <h2 id="contacto">Contacto:</h2>
+                
                 <p><label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre">
                 </p>
@@ -113,16 +130,20 @@
                 <button type="submit">Enviar</button>
             </form>
         </section>
-
-        <div id="filtros">
-            <button onclick="filtrarPeliculas('todas')">Todas</button>
-            <button onclick="filtrarPeliculas('stop-motion')">Stop-Motion</button>
-            <button onclick="filtrarPeliculas('fantasía')">Fantasía</button>
+        <div class="barra-superior">
+            <h2>Películas Favoritas</h2>
+            <button class="color-boton" onclick="toggleSeccion('peliculas')">ocultar/mostrar</button>
         </div>
         
         <section id="peliculas">
-            <h2>Películas Favoritas:</h2>
-            <div class="contenedorPeliculas" id="galeriaPeliculas"></div>
+            <div class="tarjeta">
+                <div class="filtro-peliculas">
+                    <button class="color-boton" onclick="filtrarPeliculas('todas')">Todas</button>
+                    <button class="color-boton" onclick="filtrarPeliculas('stop-motion')">Stop-Motion</button>
+                    <button class="color-boton" onclick="filtrarPeliculas('fantasía')">Fantasía</button>
+                </div>
+                <div class="contenedorPeliculas" id="galeriaPeliculas"></div>
+            </div>
         </section>
         
     </main>
@@ -137,6 +158,7 @@
         <!--temporizador-->
         <div id="temporizador" class="temporizador"></div>
     </footer>    
+  
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -46,12 +46,15 @@ Esta animación fue creada con CSS usando '@keyframe' y se activa con JavaScript
 
 Mejoras realizadas: 
 
-1. Mejoras en las tarjetas:  
-   Se agregaron efectos visuales y animaciones que mejoran la experiencia del usuario, como el giro de las tarjetas al hacer clic.
+En esta segunda parte del proyecto realicé varios cambios importantes para mejorar tanto la experiencia visual como la funcionalidad del sitio. Uno de los primeros fue agregar animaciones interactivas a las tarjetas de películas, las cuales giran al hacer clik, lo que le da dinamismo y una experiencia más atractiva para el usuario.
 
-2. Implementación del modo oscuro:  
-   Se añadió un botón para cambiar entre modo claro y oscuro.
+También incorporé un botón para cambiar entre modo claro y oscuro, lo que permite una mejor adaptación a la preferencia visual de cada persona. Esto lo hice guardando la selección en el almacenamiento local del navegador, para que se mantenga entre sesiones.
 
+Además, trabajé en adaptar el diseño del sitio para que se vea correctamente en diferentes dispositivos como computadoras, tablets y celulares. Para lograrlo, usé Flexbox y media queries, reorganizando la estructura del menú y el botón "Cambiar Modo" cuando el ancho de la pantalla se reduce. Así se evita que los elementos se encimen y se mantiene todo visible y ordenado.
+
+Otro punto clave fue la limpieza y organización del código. Reestructuré tanto HTML, CSS como JavaScript, eliminando estilos duplicados y funciones que ya no se usaban. Unifiqué los estilos de los botones en una sola clase llamada '.color-boton', para que todos tengan la misma apariencia y estilo.
+
+También centré los títulos de sección para que se vean más equilibrados visualmente, y mejoré los contrastes de colores para que el contenido sea más legible. Por último, agregué comentarios claros en el código para facilitar la comprensión, pensando tanto en la evaluación del docente como en futuras revisiones personales.
 
 
 
