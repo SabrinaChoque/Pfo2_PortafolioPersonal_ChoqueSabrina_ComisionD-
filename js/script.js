@@ -66,7 +66,7 @@ const peliculas = [
         titulo: "El Cadáver de la Novia",
         descripcion: "Un joven se compromete accidentalmente con el espíritu de una novia que nunca logró casarse. Una historia gótica sobre el amor y las tradiciones.",
         imagen: "img/cadaverDeLaNovia.jpg",
-        categoria: "tim-burton"
+        categoria: "tim-borton"
     },
     {
         titulo: "El Castillo Ambulante",
