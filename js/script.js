@@ -60,13 +60,13 @@ const peliculas = [
         titulo: "El Extraño Mundo De Jack",
         descripcion: "Jack Skellington, el Rey de Halloween, descubre la Navidad y decide asumir el papel de Santa Claus, con consecuencias inesperadas.",
         imagen: "img/ExtrañoMundoDeJack.jpg",
-        categoria: "tim-borton"
+        categoria: "tim-burton"
     },
     {
         titulo: "El Cadáver de la Novia",
         descripcion: "Un joven se compromete accidentalmente con el espíritu de una novia que nunca logró casarse. Una historia gótica sobre el amor y las tradiciones.",
         imagen: "img/cadaverDeLaNovia.jpg",
-        categoria: "tim-borton"
+        categoria: "tim-burton"
     },
     {
         titulo: "El Castillo Ambulante",
