@@ -259,7 +259,7 @@ body.modo-oscuro footer {
     color: #eee;
 }
 
-/* Contenedor del nav: permite centrar y posicionar el botón */
+
 .nav-contenido {
     position: relative;
     display: flex;
@@ -270,14 +270,14 @@ body.modo-oscuro footer {
     padding: 10px 0;
 }
 
-/* Centrar los links */
+
 .menu-links {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-/* Enlaces de navegación */
+
 .menu-links ul {
     display: flex;
     gap: 15px;
@@ -286,7 +286,6 @@ body.modo-oscuro footer {
     list-style: none;
 }
 
-/* Botón flotante a la derecha */
 #modoToggle {
     position: absolute;
     right: 20px;
@@ -294,7 +293,7 @@ body.modo-oscuro footer {
     transform: translateY(-50%);
 }
 
-/* Estilo común para TODOS los botones */
+
 .color-boton {
     background-color: #ffffff;
     color: rgb(65, 19, 71);
@@ -311,7 +310,7 @@ body.modo-oscuro footer {
 .color-boton:hover {
     background-color: #844af1;
 }
-/*temporizador*/
+
 .temporizador {
     font-size: 20px;
     text-align: center;
@@ -320,7 +319,7 @@ body.modo-oscuro footer {
     font-weight: bold;
 }
 
-/*se agrega boton mostrar y ocultar  */
+
 .barra-superior {
     background-color: #a349a4;
     color: white;
@@ -367,22 +366,33 @@ body.modo-oscuro footer {
     gap: 15px;
 }
 
-/* Diseño responsive para pantallas pequeñas */
+
 @media screen and (max-width: 600px) {
     .nav-contenido {
-        flex-direction: column;       /* cambia a vertical */
-        align-items: center;          /* centra elementos */
+        flex-direction: column;       
+        align-items: center;          
     }
 
     .menu-links ul {
-        flex-direction: column;       /* los links uno abajo del otro */
+        flex-direction: column;     
         align-items: center;
         gap: 10px;
     }
 
     #modoToggle {
         position: static;             /* quita el flotante */
-        transform: none;
-        margin-top: 15px;             /* separa del menú */
+        margin-top: 15px;         
     }
+}
+body.modo-oscuro .cuadro-habilidades {
+    background-color: #444; /* fondo oscuro para la tabla */
+}
+
+body.modo-oscuro .cuadro-habilidades th {
+    background-color: #555; /* fondo un poco más claro para los encabezados */
+    color: #f1f1f1;          /* texto blanco para títulos */
+}
+
+body.modo-oscuro .cuadro-habilidades td {
+    color: #f1f1f1;          /* texto blanco para los items */
 }
