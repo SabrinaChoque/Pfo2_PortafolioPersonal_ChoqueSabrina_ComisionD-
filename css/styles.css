@@ -340,7 +340,6 @@ body.modo-oscuro footer {
     text-align: center;       
 }
 
-/* filtros de películas */
 .filtro-y-galeria {
     display: flex;
     flex-direction: column;
@@ -358,7 +357,7 @@ body.modo-oscuro footer {
 .filtro-label {
     font-weight: bold;
     font-size: 18px;
-    color: #003344;
+    color: #ac05a3;
 }
 
 .botones-filtro {
@@ -380,19 +379,19 @@ body.modo-oscuro footer {
     }
 
     #modoToggle {
-        position: static;             /* quita el flotante */
+        position: static;             
         margin-top: 15px;         
     }
 }
 body.modo-oscuro .cuadro-habilidades {
-    background-color: #444; /* fondo oscuro para la tabla */
+    background-color: #444; 
 }
 
 body.modo-oscuro .cuadro-habilidades th {
-    background-color: #555; /* fondo un poco más claro para los encabezados */
-    color: #f1f1f1;          /* texto blanco para títulos */
+    background-color: #555; 
+    color: #f1f1f1;          
 }
 
 body.modo-oscuro .cuadro-habilidades td {
-    color: #f1f1f1;          /* texto blanco para los items */
+    color: #f1f1f1;          
 }
