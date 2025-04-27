@@ -156,7 +156,6 @@ window.addEventListener("DOMContentLoaded", () => {
     if (modo === "oscuro") {
         document.body.classList.add("modo-oscuro");
     }
-
   
     filtrarPeliculas("todas"); 
     iniciarTemporizador();
