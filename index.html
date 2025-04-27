@@ -137,14 +137,21 @@
         
         <section id="peliculas">
             <div class="tarjeta">
-                <div class="filtro-peliculas">
-                    <button class="color-boton" onclick="filtrarPeliculas('todas')">Todas</button>
-                    <button class="color-boton" onclick="filtrarPeliculas('tim-burton')">Tim Burton</button>
-                    <button class="color-boton" onclick="filtrarPeliculas('studio-ghibli')">Studio Ghibli</button>
+                <div class="filtro-y-galeria">
+                    <div class="filtro-peliculas">
+                        <label class="filtro-label">Selección de películas:</label>
+                        <div class="botones-filtro">
+                            <button class="color-boton" onclick="filtrarPeliculas('todas')">Todas</button>
+                            <button class="color-boton" onclick="filtrarPeliculas('tim-burton')">Tim Burton</button>
+                            <button class="color-boton" onclick="filtrarPeliculas('studio-ghibli')">Studio Ghibli</button>
+                        </div>
+                    </div>
+        
+                    <div class="contenedorPeliculas" id="galeriaPeliculas"></div>
                 </div>
-                <div class="contenedorPeliculas" id="galeriaPeliculas"></div>
             </div>
         </section>
+        
         
     </main>
 

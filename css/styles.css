@@ -342,13 +342,31 @@ body.modo-oscuro footer {
 }
 
 /* filtros de películas */
+.filtro-y-galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .filtro-peliculas {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 20px;
-    padding-top: 10px;
+    padding: 10px 20px;
 }
+
+.filtro-label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #003344;
+}
+
+.botones-filtro {
+    display: flex;
+    gap: 15px;
+}
+
 /* Diseño responsive para pantallas pequeñas */
 @media screen and (max-width: 600px) {
     .nav-contenido {

@@ -3,7 +3,7 @@
 LinkPages: https://sabrinachoque.github.io/Pfo2_PortafolioPersonal_ChoqueSabrina_ComisionD-/
 
 
-Funcionalidades 
+Funcionalidades:
 
 1. Validación del formulario:
 se validara que todos los campos esten completos antes de enviarlos.Si falta algun campo sin completar este mostrara un mensaje de alerta "Faltan campos para completar."
